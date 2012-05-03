@@ -1,0 +1,17 @@
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-04-30 16:18:50
+project --topLevelPackage org.krams.tutorial --projectName rooAcl --java 6 --packaging JAR
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-04-30 16:18:51
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-04-30 16:18:57
+persistence setup --database POSTGRES --provider HIBERNATE --databaseName acl --hostName localhost --password 123456 --userName postgres
+// [failed] json all
+// [failed] json all
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-04-30 16:21:44
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-04-30 16:23:09
+// [failed] json all
+web mvc setup
+web mvc all --package org.krams.tutorial.controller
+web mvc json all 
+security setup
+service --interface ~.service.AdminPostService --entity ~.domain.AdminPost
+service --interface ~.service.PersonalPostService --entity ~.domain.PersonalPost
+service --interface ~.service.PublicPostService --entity ~.domain.PublicPost

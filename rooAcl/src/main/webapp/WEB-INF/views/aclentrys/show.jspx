@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_krams_tutorial_acl_AclEntry" object="${aclentry}" path="/aclentrys" z="LvXNvbNQ+qNIZ/+9sRE9xmSCVv0=">
+        <field:display field="aclObjectIdentity" id="s_org_krams_tutorial_acl_AclEntry_aclObjectIdentity" object="${aclentry}" z="mCmBi9ZrayXHKy4xeBinHZOTdiw="/>
+        <field:display field="sid" id="s_org_krams_tutorial_acl_AclEntry_sid" object="${aclentry}" z="m0+mCelJgV0+Zy+GMkdFZHW78js="/>
+        <field:display field="aceOrder" id="s_org_krams_tutorial_acl_AclEntry_aceOrder" object="${aclentry}" z="XdsOySYNK0ACaavFOieHSJoBeEU="/>
+        <field:display field="mask" id="s_org_krams_tutorial_acl_AclEntry_mask" object="${aclentry}" z="7x1gGmhY7u70JrBJ/TxximuTrwE="/>
+        <field:display field="granting" id="s_org_krams_tutorial_acl_AclEntry_granting" object="${aclentry}" z="4+RzEdMaslGZ1l+UEojWC3vWl4w="/>
+        <field:display field="auditSuccess" id="s_org_krams_tutorial_acl_AclEntry_auditSuccess" object="${aclentry}" z="lbHevefv8O5H2MCb0PWhDenQYUo="/>
+        <field:display field="auditFailure" id="s_org_krams_tutorial_acl_AclEntry_auditFailure" object="${aclentry}" z="v0zTGYRDb3qs48FAOp0J5vYrByo="/>
+    </page:show>
+</div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_krams_tutorial_acl_AclSid" items="${aclsids}" z="k9/1uxFYJKljxYPJS27/VlKIfhg=">
+        <table:table data="${aclsids}" id="l_org_krams_tutorial_acl_AclSid" path="/aclsids" z="TlskDg1L9c8qoKBZk435zvVYf0g=">
+            <table:column id="c_org_krams_tutorial_acl_AclSid_principal" property="principal" z="aaZmaU4bx+SnPxmbbV9vxM7f2ig="/>
+            <table:column id="c_org_krams_tutorial_acl_AclSid_sid" property="sid" z="IAReQW/sF7Hlly4/BwM9mXtsBsM="/>
+        </table:table>
+    </page:list>
+</div>

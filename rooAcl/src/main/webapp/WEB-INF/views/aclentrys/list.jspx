@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_krams_tutorial_acl_AclEntry" items="${aclentrys}" z="cMzCUN4vxqS70bK3FpehVN2htYs=">
+        <table:table data="${aclentrys}" id="l_org_krams_tutorial_acl_AclEntry" path="/aclentrys" z="kCExjy+nApGbYOHWGOoAvZB28bQ=">
+            <table:column id="c_org_krams_tutorial_acl_AclEntry_aclObjectIdentity" property="aclObjectIdentity" z="xk4Jk+fllGnEuuaIc4czu/31i0E="/>
+            <table:column id="c_org_krams_tutorial_acl_AclEntry_sid" property="sid" z="7h4ss2Z2n/3jIXQjsgenbwCiH70="/>
+            <table:column id="c_org_krams_tutorial_acl_AclEntry_aceOrder" property="aceOrder" z="/v7vzsKq79jqQXeOUIThcnHyA4s="/>
+            <table:column id="c_org_krams_tutorial_acl_AclEntry_mask" property="mask" z="V3C/bgxzImcZFUO/zJOp40jz05g="/>
+            <table:column id="c_org_krams_tutorial_acl_AclEntry_granting" property="granting" z="A5lh5hSOZJ7UY3yB/RylJWvv/HI="/>
+            <table:column id="c_org_krams_tutorial_acl_AclEntry_auditSuccess" property="auditSuccess" z="Xl/srvQv6LRY7swpYOYU6o6ffAg="/>
+        </table:table>
+    </page:list>
+</div>

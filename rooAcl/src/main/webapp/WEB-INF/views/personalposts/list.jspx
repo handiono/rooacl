@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_krams_tutorial_domain_PersonalPost" items="${personalposts}" z="4T0wRaYWLfHNtatjKZLpUTOQXjs=">
+        <table:table data="${personalposts}" id="l_org_krams_tutorial_domain_PersonalPost" path="/personalposts" z="42sZ53ZGkG867Ox6cQ3rQhD25Iw=">
+            <table:column date="true" dateTimePattern="${personalPost_date_date_format}" id="c_org_krams_tutorial_domain_PersonalPost_date" property="date" z="AGYgeSnTN+1bCdSqrB7TAlDCYqU="/>
+            <table:column id="c_org_krams_tutorial_domain_PersonalPost_message" property="message" z="08jckGGhItsMZlT6+E1OmhwIcQs="/>
+        </table:table>
+    </page:list>
+</div>
