@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_org_krams_tutorial_acl_AclEntry" modelAttribute="aclEntry" path="/aclentrys" render="${empty dependencies}" z="LBiPrG2Ne65GILNR2gmW2ub60mQ=">
+        <field:select field="aclObjectIdentity" id="c_org_krams_tutorial_acl_AclEntry_aclObjectIdentity" itemValue="id" items="${aclobjectidentitys}" path="/aclobjectidentitys" z="TM/6n2lSUDId+anJWBWhu2f5DQ4="/>
+        <field:select field="sid" id="c_org_krams_tutorial_acl_AclEntry_sid" itemValue="id" items="${aclsids}" path="/aclsids" z="lL9+Hmt14q5hnLVtVs+NqQM6Soo="/>
+        <field:input field="aceOrder" id="c_org_krams_tutorial_acl_AclEntry_aceOrder" required="true" validationMessageCode="field_invalid_integer" z="C5KU6kVQ1hr43383t0eavUHSoGQ="/>
+        <field:input field="mask" id="c_org_krams_tutorial_acl_AclEntry_mask" required="true" validationMessageCode="field_invalid_integer" z="ja16HKtH4ehunh1rHl+0IM8GP1k="/>
+        <field:checkbox field="granting" id="c_org_krams_tutorial_acl_AclEntry_granting" z="IZ5MFwLIrBea8mct4OiBYGLmSow="/>
+        <field:checkbox field="auditSuccess" id="c_org_krams_tutorial_acl_AclEntry_auditSuccess" z="HZO/UZaNq2XTSyQePcNAX/iUymg="/>
+        <field:checkbox field="auditFailure" id="c_org_krams_tutorial_acl_AclEntry_auditFailure" z="l2sN14lBJQxH9jCsom6R+LThT5E="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_org_krams_tutorial_acl_AclEntry" render="${not empty dependencies}" z="/pMSRmcyzsBf4fww64oWVwJR7Mw="/>
+</div>

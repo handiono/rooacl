@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:sec="http://www.springframework.org/security/tags" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+  	<menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_publicpost" z="TKvKkGXR2UVK0Mf+MBq1VXur2jo=">
+            <menu:item id="i_publicpost_new" messageCode="global_menu_new" url="/publicposts?form" z="atLseUdcIhYBeZUIclB+Y2E8Ba8="/>
+            <menu:item id="i_publicpost_list" messageCode="global_menu_list" url="/publicposts?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ugEP6EKCjQNuKDBqP2FXMs15OHg="/>
+        </menu:category>
+       
+        <menu:category id="c_personalpost" z="xPSYnATPdJx4/iqvH1kxfK0AzEg=">
+            <menu:item id="i_personalpost_new" messageCode="global_menu_new" url="/personalposts?form" z="M8oZUSE0ZeaLOaNqJR6J3ZgJ2Lg="/>
+            <menu:item id="i_personalpost_list" messageCode="global_menu_list" url="/personalposts?page=1&amp;size=${empty param.size ? 10 : param.size}" z="HsuDkAVlsN9ADPSXerTvQNx8Yw0="/>
+        </menu:category>
+
+		<menu:category id="c_adminpost" z="bnzmR9xZYYF6uH69IZkB8Zn+QHY=">
+            <menu:item id="i_adminpost_new" messageCode="global_menu_new" url="/adminposts?form" z="lgP/iP5N+kSa5TJuEO7A+u3wSkg="/>
+            <menu:item id="i_adminpost_list" messageCode="global_menu_list" url="/adminposts?page=1&amp;size=${empty param.size ? 10 : param.size}" z="GHeZOlVqigt32QpX9dAWal2ZxdA="/>
+        </menu:category>
+
+        
+        <sec:authorize ifAllGranted="ROLE_ADMIN">
+	        <menu:category id="c_aclsid" z="y8s5ZYcvtVFZWhjC1mcACDGn5t8=">
+	            <menu:item id="i_aclsid_new" messageCode="global_menu_new" url="/aclsids?form" z="ZokiKOCo2WrAsPoBOcNLYcsZq9o="/>
+	            <menu:item id="i_aclsid_list" messageCode="global_menu_list" url="/aclsids?page=1&amp;size=${empty param.size ? 10 : param.size}" z="7JYx9zrBOCqCgZlx2FwzMCTQfqE="/>
+	        </menu:category>
+	         <menu:category id="c_aclclass" z="NV1nEyR01Xh1kCMlHUH4r1HqDXo=">
+	            <menu:item id="i_aclclass_new" messageCode="global_menu_new" url="/aclclasses?form" z="eGWdfs05hnzekL+5yP9vHlqnhmU="/>
+	            <menu:item id="i_aclclass_list" messageCode="global_menu_list" url="/aclclasses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="8K/vdgVjnOs/FOID7nUfH1spKYk="/>
+	        </menu:category>
+	        <menu:category id="c_aclobjectidentity" z="f08oOntvlw2HzPknMM7BWQxv5eE=">
+	            <menu:item id="i_aclobjectidentity_new" messageCode="global_menu_new" url="/aclobjectidentitys?form" z="UoKT7ijJ12jfLKbIUVgz26f1sis="/>
+	            <menu:item id="i_aclobjectidentity_list" messageCode="global_menu_list" url="/aclobjectidentitys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="pRuUDAJK+qJPl69JmiQr/w/XrPE="/>
+	        </menu:category>
+	        <menu:category id="c_aclentry" z="zFXjT0Yy85OFdOIRxmCkd/tjdqk=">
+	            <menu:item id="i_aclentry_new" messageCode="global_menu_new" url="/aclentrys?form" z="D5xtd5pH0Gkf35QXvjb1eNlWbEU="/>
+	            <menu:item id="i_aclentry_list" messageCode="global_menu_list" url="/aclentrys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="th/ZfGAnIjfW/Yl/IKleMm0+2Wo="/>
+	        </menu:category>
+    	</sec:authorize>
+        
+    </menu:menu>
+</div>

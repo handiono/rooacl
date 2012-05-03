@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_krams_tutorial_acl_AclObjectIdentity" object="${aclobjectidentity}" path="/aclobjectidentitys" z="vNCGrfz7KKxZ5Kt1LpN+K0JgtAA=">
+        <field:display field="objectIdClass" id="s_org_krams_tutorial_acl_AclObjectIdentity_objectIdClass" object="${aclobjectidentity}" z="UEJh5VPyx2Sh6pWMrYf+FX8Eb3I="/>
+        <field:display field="ownerSid" id="s_org_krams_tutorial_acl_AclObjectIdentity_ownerSid" object="${aclobjectidentity}" z="yretC9UGgup5BcQgEmKkp6TAJLw="/>
+        <field:display field="objectIdIdentity" id="s_org_krams_tutorial_acl_AclObjectIdentity_objectIdIdentity" object="${aclobjectidentity}" z="vE/g0hFH9zMtVWxl1myhEzE8FjQ="/>
+        <field:display field="parentObject" id="s_org_krams_tutorial_acl_AclObjectIdentity_parentObject" object="${aclobjectidentity}" z="Bz4BGCYzHWPcjRRIYkkNhNu5W9o="/>
+        <field:display field="entriesInheriting" id="s_org_krams_tutorial_acl_AclObjectIdentity_entriesInheriting" object="${aclobjectidentity}" z="suCSUxT3in3UqM68ZtMJaUjN2V8="/>
+    </page:show>
+</div>
